@@ -1,0 +1,684 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Quicksand";
+  font-weight: 500;
+  background: #fafafa;
+}
+/* ---------------------------------------------------------------------------- */
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+._container {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+/*----------------------header---------------------------*/
+
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 30;
+}
+.header__container {
+  display: flex;
+  min-height: 80px;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgb(109, 109, 109);
+}
+
+.header__logo {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #ff7539;
+  margin: 25px 0px 25px 175px;
+}
+.header__menu {
+}
+._menu {
+}
+.menu__list {
+  display: flex;
+  margin: 30px 0px 30px 249px;
+}
+
+.menu__items:not(last-child) {
+  margin: 0px 34.49px;
+}
+.menu__items::first-child {
+  color: #000;
+}
+.menu__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3f3f3f;
+  opacity: 0.6;
+}
+.menu__link:hover {
+  text-decoration: underline;
+
+  color: #272424;
+}
+.logo__buttom {
+  background: #ff7539;
+  border-radius: 10px;
+  height: 40px;
+  margin: 14px 0px 20px 110px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0px 37px;
+  color: #3a3a3a;
+}
+
+.text__buttom {
+  display: inline-block;
+  color: inherit;
+  margin: 0px 0px 0px 0px;
+}
+
+.text__buttom span {
+  background: url(../img/icons/icons8-pegada-de-gato-64.svg) left no-repeat;
+  padding: 15px 0px 13px 28px;
+}
+.text__buttom span:hover {
+  color: #ffffff;
+}
+
+/*----------------------main-card---------------------------*/
+.page_main-block1 {
+  padding: 185px 0px 200px 0px;
+  background-color: #ffffff;
+}
+
+.main__container {
+  display: flex;
+}
+
+.main_card {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 160px 0px 0px;
+}
+.main_card_color {
+  background: #ffe3d7;
+}
+.main_card__subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4d4d4d;
+  color: inherit;
+}
+.main_card__title {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 65px;
+  color: #1a1a1a;
+  width: 370px;
+  height: 244px;
+  padding: 40px 0px 0px 0px;
+}
+.main_card__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 100px 0px 0px 0px;
+}
+
+.logo__buttom-card {
+  display: flex;
+  margin: 100px 0px 35px 40px;
+}
+.text__buttom-card {
+  display: block;
+  color: inherit;
+  background: #ff7539;
+  border-radius: 20px;
+  padding: 18px 0px 18px 40px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #3a3a3a;
+}
+.text__buttom-card span {
+  position: relative;
+  padding: 10px 40px;
+}
+.text__buttom-card span::before {
+  content: "";
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  color: #000;
+  z-index: 3;
+  background: url(../img/icons/icons8-pegada-de-gato-64.svg) left no-repeat;
+}
+.text__buttom-card:hover {
+}
+.main_card__subtext {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.main_card_img {
+  width: 775px;
+  height: 573px;
+  z-index: 1;
+  margin: 20px 0px 30px -80px;
+}
+
+.main_card-girl {
+  width: 775px;
+  height: 573px;
+
+  border-radius: 20px;
+  z-index: 3;
+  padding: 0px 0px 0px 20px;
+  margin: 0px 0px 0px 120px;
+}
+
+.main-card-girl-img_border {
+  position: absolute;
+  width: 783px;
+  height: 579px;
+  margin: -26px 36px 0px 28px;
+  border: 5px solid #ff7539;
+  border-radius: 20px;
+}
+
+.page_main-block2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #ffe3d7;
+  justify-content: space-around;
+}
+
+.main_card__subtitle2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ff7539;
+  text-align: center;
+  margin: 88px 408px 0 407px;
+}
+.main_card__title2 {
+  margin: 32px 325px 0 324px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  color: #1a1a1a;
+}
+.main_card__stars {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 401px 73px 401px;
+}
+
+.main_card__stars-text3 {
+  display: flex;
+  align-items: center;
+}
+
+.main_card__people {
+  display: flex;
+}
+.main_card__people-reviews {
+  margin: 0px 0px 0px 16px;
+  background: #ffffff;
+}
+.people-reviews-item {
+  display: flex;
+  flex-direction: row;
+}
+.reviews-item__img {
+  padding: 40px 0 0 40px;
+}
+.reviews-items {
+  padding: 40px 0 0 41px;
+}
+.reviews-item_name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4d4d4d;
+}
+.reviews-item_address {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #4d4d4d;
+  padding: 16px 0px 0px 0px;
+}
+.card__people-review {
+  padding: 40px 50px 0px 50px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1a1a1a;
+  width: 435.68px;
+  height: 164.15px;
+}
+.card__people-review-star {
+  padding: 24px 0px 50px 42px;
+}
+
+/*-------------block3 cats-------------------*/
+
+.main_card-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4d4d4d;
+  padding-top: 24px;
+}
+.main_block3-cats {
+  margin: 95px 0px 93px 0px;
+  display: flex;
+}
+.main_block3-cats-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 35px 0px 35px;
+  flex: 0 1 25%;
+  align-items: flex-start;
+}
+.cats-column__img {
+  border-radius: 5px;
+}
+.cats-column_title {
+  padding-top: 42px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #3f3f3f;
+}
+.cats-column_sub-title {
+  padding: 22px 0px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #4d4d4d;
+}
+
+/*-------------block4 -------------------*/
+.page_main-block4 {
+  background: #ffe3d7;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.block4-card {
+  display: flex;
+  margin: 141px 0px 0px 0px;
+  justify-content: space-between;
+}
+
+.block4-card-girl-img {
+  padding: 0px 20px 0px 0px;
+}
+.block4-card-girl-img_border {
+  position: absolute;
+  width: 608px;
+  height: 406px;
+  margin: -26px 36px 0px 28px;
+  border: 5px solid #ff7539;
+  border-radius: 20px;
+}
+
+.block4-card-color {
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.block4-card-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #ff7539;
+}
+.block4-card-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  padding: 40px 0px 0px 0px;
+}
+.block4-card-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 32px 0px 0px 0px;
+}
+
+.block4-card-link {
+  padding: 87px 175px 123px 175px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-link_bttn {
+  color: inherit;
+  background-color: #fafafa;
+  padding: 45px 50px;
+
+  border-radius: 20px;
+  text-align: center;
+}
+.card-link_bttn:not(first-child last-child) {
+  margin: 0px 25px;
+}
+.card-link_bttn:hover {
+  background-color: #fa7d47;
+}
+
+.card-link {
+  display: block;
+  color: #000;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/*-------------block5 -------------------*/
+
+.page_main-block5 {
+  background: url(../img/main_card/Fundo\ Gift.jpg) no-repeat;
+  height: 100%;
+  padding: 105px 0px 90px 0px;
+}
+
+.block5-card {
+}
+
+.main_card__title5 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000000;
+  margin: 0 388px 32px 388px;
+}
+.block4-card-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  margin: 0 auto;
+  padding: 0px 197px 0px 70px;
+}
+.block5-card_buttons {
+  margin: 84px 66px 90px 66px;
+  display: flex;
+  flex-direction: row;
+}
+.card_button {
+  background-color: #fafafa;
+  text-align: center;
+  margin: 0px 16px 0px 16px;
+  border-radius: 10px;
+}
+.card_button:hover {
+  background-color: #ff7539;
+  .block5-card-subtitle,
+  .block5-card-title {
+    color: #fafafa;
+  }
+  .text__buttom5 {
+    background-color: #e6e6e6;
+    color: #1a1a1a;
+  }
+}
+
+.block5-card-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #ff7539;
+  padding: 74px 0px 0px 0px;
+}
+.block5-card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #1a1a1a;
+  padding: 31px 80px 0px 80px;
+}
+.block5-card-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  padding: 13px 90px 0px 90px;
+}
+.block5__buttom {
+  margin: 40px 0px 90px 0px;
+}
+.text__buttom5 {
+  display: inline-block;
+  padding: 17px 25px;
+  background-color: #ff7539;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1a1a1a;
+}
+.text__buttom5:hover {
+  border: 1px solid #111111;
+  background-color: #ff7539;
+  padding: 15px 24px;
+}
+
+/*-------------block6 -------------------*/
+.page-_main-block6 {
+  display: flex;
+  padding: 0px 0px 150px 0px;
+}
+.main-block6_body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main_card6 {
+  margin-right: 100px;
+}
+.main_card6__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ff7539;
+}
+.main_card6__title {
+  padding: 40px 0px 32px 0px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #212529;
+}
+.main_card6__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4d4d4d;
+  padding: 0px 0px 52px 0px;
+}
+.logo__buttom-card6 {
+  padding: 0px 0px 0px 121px;
+}
+.text__buttom-card6 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  padding: 19px 52px;
+  color: #ff7539;
+  border: 3px solid #ff7539;
+  border-radius: 10px;
+}
+
+.text__buttom-card6:hover {
+  background-color: #fa7d47;
+  color: #e6e6e6;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+}
+
+.-img_border6 {
+  width: 587px;
+  height: 468px;
+  border: 5px solid #ff7539;
+  border-radius: 20px;
+  z-index: 2;
+}
+.main_card-girl6 img {
+  position: absolute;
+  margin: 30px 0px 0px 34px;
+  width: 537px;
+  height: 461px;
+  border-radius: 0px 0px 20px 20px;
+  z-index: 1;
+}
+/*-------------block7 -------------------*/
+.page_main-block7 {
+  text-align: center;
+  align-items: center;
+  background: #ffe3d7;
+}
+
+.main_card7 {
+  text-align: center;
+
+  padding: 146px 0px;
+}
+.main_card_color {
+  background-color: #ffffff;
+}
+._main-block7_sub {
+  padding: 28px 0px 0px 0px;
+  color: #ff7539;
+}
+
+._main-block7_titl {
+  width: auto;
+  height: auto;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #212529;
+}
+
+._main-block7_txt {
+  margin: 16px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4d4d4d;
+}
+.logo__buttom-card {
+  display: inline-block;
+  margin: 54px 0px 49px 0px;
+}
+.text__buttom-card {
+  color: inherit;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.logo__buttom-card:hover {
+  color: #ffffff;
+}
+
+/*-------------Footer -------------------*/
+
+.footer_container {
+  background-color: #ff7539;
+  display: flex;
+  justify-content: space-between;
+  height: 268px;
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 76px 0px 80px 124px;
+}
+.footer_info__logo {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+}
+.footer_info__company {
+  padding: 15px 0px;
+}
+.footer_info__text {
+}
+.footer_socialsite {
+  padding: 124px 197px 124px 0px;
+  display: flex;
+  flex-direction: row;
+}
+.footer_socialsite__icon img {
+  height: 100%;
+}
+.footer_socialsite__icon img:not(last-child) {
+  padding: 0px 40px 0px 0px;
+}
+.footer_socialsite__icon a:hover {
+  height: 30px;
+  display: inline-block;
+  color: inherit;
+  text-shadow: #fafafa;
+}
